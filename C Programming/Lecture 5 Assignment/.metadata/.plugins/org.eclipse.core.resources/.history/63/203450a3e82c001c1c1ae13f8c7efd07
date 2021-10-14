@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : FindPrimeNumbers.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+unsigned char IsPrime(unsigned int num)
+{
+	if(num == 2) return 1;
+	int i;
+	for(i=2 ; i<num/2;i++)
+	{
+		if(num % i == 0)
+			return 0;
+	}
+	return 1;
+
+}
+int main(void) {
+
+
+}

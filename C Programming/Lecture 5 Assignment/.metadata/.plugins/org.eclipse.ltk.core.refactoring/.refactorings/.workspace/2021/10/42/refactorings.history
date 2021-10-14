@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ReverseString_Recurise&apos; to &apos;ReverseSentence_Recursive&apos;" description="Rename resource &apos;ReverseString_Recurise&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ReverseString_Recurise" name="ReverseSentence_Recursive" stamp="1634220321498" updateReferences="true"/>
+</session>

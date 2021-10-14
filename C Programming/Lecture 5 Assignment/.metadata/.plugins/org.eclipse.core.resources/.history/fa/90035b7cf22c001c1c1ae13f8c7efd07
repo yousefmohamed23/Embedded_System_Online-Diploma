@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name        : ReverseString_Recurise.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+void Reverse_String_Recursive(char str[])
+
+int main(void) {
+	char str[100];
+	printf("Enter a sentence :");
+	fflush(stdout);
+	gets(str);
+
+}

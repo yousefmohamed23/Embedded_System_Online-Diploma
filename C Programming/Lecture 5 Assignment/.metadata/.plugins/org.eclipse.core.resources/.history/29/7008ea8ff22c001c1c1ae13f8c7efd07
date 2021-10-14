@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : PowerOfNumberRecursive.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+unsigned int PowOfNumber(unsigned int number , unsigned int base);
+
+unsigned int PowOfNumber(unsigned int number , unsigned int base)
+{
+	if (base == 0) return 1;
+	return number*PowOfNumber(number,base-1);
+
+}
+
+int main(void) {
+
+	printf("%d",PowOfNumber(3));
+}

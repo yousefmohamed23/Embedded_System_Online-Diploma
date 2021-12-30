@@ -1,0 +1,16 @@
+20000004 B _E_bss_
+20000004 D _E_data_
+0800012c T _E_text_
+20000004 B _S_bss_
+20000000 D _S_data_
+20001004 B _stack_top
+08000128 T arr
+20001004 B bss_var
+08000098 T default_Handler
+20000000 D GPIOPA_ODR
+08000098 W Hardfault_Handler
+08000020 T main
+08000098 W MemoryManagement_Handler
+08000014 T NMI_Handler
+080000a4 T Reset_Handler
+08000000 T vectors

@@ -1,0 +1,1380 @@
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+14:36:08 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+14:37:05 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:99:14: warning: passing argument 2 of 'Add_Node' from incompatible pointer type [-Wincompatible-pointer-types]
+   99 |   Add_Node(i,&head);
+      |              ^~~~~
+      |              |
+      |              S_node ** {aka struct S_node **}
+..\LinkedList.c:8:53: note: expected 'S_node *' {aka 'struct S_node *'} but argument is of type 'S_node **' {aka 'struct S_node **'}
+    8 | LinkedList_status Add_Node (uint32_t data , S_node* head){
+      |                                             ~~~~~~~~^~~~
+gcc -o LinkedList.exe LinkedList.o 
+14:38:14 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+14:40:07 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+14:42:18 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:18:8: warning: assignment to 'S_node **' {aka 'struct S_node **'} from incompatible pointer type 'S_node *' {aka 'struct S_node *'} [-Wincompatible-pointer-types]
+   18 |   head = new_node;
+      |        ^
+..\LinkedList.c:26:20: warning: assignment to 'S_node *' {aka 'struct S_node *'} from incompatible pointer type 'S_node **' {aka 'struct S_node **'} [-Wincompatible-pointer-types]
+   26 |   new_node->nextptr= head;
+      |                    ^
+..\LinkedList.c:27:7: warning: assignment to 'S_node **' {aka 'struct S_node **'} from incompatible pointer type 'S_node *' {aka 'struct S_node *'} [-Wincompatible-pointer-types]
+   27 |   head= temp;
+      |       ^
+..\LinkedList.c: At top level:
+..\LinkedList.c:35:19: error: conflicting types for 'Delete_Node'
+   35 | LinkedList_status Delete_Node (uint32_t id ,S_node* head){
+      |                   ^~~~~~~~~~~
+In file included from ..\LinkedList.c:7:
+..\Linkedlist.h:38:19: note: previous declaration of 'Delete_Node' was here
+   38 | LinkedList_status Delete_Node (uint32_t id ,S_node** head);
+      |                   ^~~~~~~~~~~
+..\LinkedList.c:83:6: error: conflicting types for 'view_list'
+   83 | void view_list (S_node * head){
+      |      ^~~~~~~~~
+In file included from ..\LinkedList.c:7:
+..\Linkedlist.h:39:6: note: previous declaration of 'view_list' was here
+   39 | void view_list (S_node ** head);
+      |      ^~~~~~~~~
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:100:14: warning: passing argument 2 of 'Add_Node' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   Add_Node(i,head);
+      |              ^~~~
+      |              |
+      |              S_node * {aka struct S_node *}
+..\LinkedList.c:8:54: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+    8 | LinkedList_status Add_Node (uint32_t data , S_node** head){
+      |                                             ~~~~~~~~~^~~~
+14:46:25 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:46:50 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:100:14: warning: passing argument 2 of 'Add_Node' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   Add_Node(i,&head);
+      |              ^~~~~
+      |              |
+      |              S_node ** {aka struct S_node **}
+..\LinkedList.c:8:53: note: expected 'S_node *' {aka 'struct S_node *'} but argument is of type 'S_node **' {aka 'struct S_node **'}
+    8 | LinkedList_status Add_Node (uint32_t data , S_node* head){
+      |                                             ~~~~~~~~^~~~
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:48:41 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:37:61: error: expected declaration specifiers or '...' before ')' token
+   37 | LinkedList_status Add_Node (uint32_t data , /*S_node* head*/);
+      |                                                             ^
+..\Linkedlist.h:38:61: error: expected declaration specifiers or '...' before ')' token
+   38 | LinkedList_status Delete_Node (uint32_t id ,/*S_node* head*/);
+      |                                                             ^
+..\LinkedList.c:12:61: error: expected declaration specifiers or '...' before ')' token
+   12 | LinkedList_status Add_Node (uint32_t data ,/* S_node* head*/){
+      |                                                             ^
+..\LinkedList.c:39:61: error: expected declaration specifiers or '...' before ')' token
+   39 | LinkedList_status Delete_Node (uint32_t id ,/*S_node* head*/){
+      |                                                             ^
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:103:3: warning: implicit declaration of function 'Add_Node' [-Wimplicit-function-declaration]
+  103 |   Add_Node(i,&head);
+      |   ^~~~~~~~
+..\LinkedList.c:106:2: warning: implicit declaration of function 'Delete_Node' [-Wimplicit-function-declaration]
+  106 |  Delete_Node(2,head);
+      |  ^~~~~~~~~~~
+16:49:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:103:3: error: too many arguments to function 'Add_Node'
+  103 |   Add_Node(i,&head);
+      |   ^~~~~~~~
+..\LinkedList.c:12:19: note: declared here
+   12 | LinkedList_status Add_Node (uint32_t data /* S_node* head*/){
+      |                   ^~~~~~~~
+..\LinkedList.c:106:2: error: too many arguments to function 'Delete_Node'
+  106 |  Delete_Node(2,head);
+      |  ^~~~~~~~~~~
+..\LinkedList.c:39:19: note: declared here
+   39 | LinkedList_status Delete_Node (uint32_t id /*S_node* head*/){
+      |                   ^~~~~~~~~~~
+16:49:29 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+16:52:16 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:53:12 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:53:54 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:54:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:54:17 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+16:55:32 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'view_list':
+..\Linkedlist.h:18:24: warning: macro expands to multiple statements [-Wmultistatement-macros]
+   18 | #define DPRINTF(...)   fflush(stdout);\
+      |                        ^~~~~~
+..\LinkedList.c:89:20: note: in expansion of macro 'DPRINTF'
+   89 |  if(temp == NULL)  DPRINTF("List is empty");
+      |                    ^~~~~~~
+..\LinkedList.c:89:2: note: some parts of macro expansion are not guarded by this 'if' clause
+   89 |  if(temp == NULL)  DPRINTF("List is empty");
+      |  ^~
+gcc -o LinkedList.exe LinkedList.o 
+16:56:10 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:56:26 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:56:42 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+16:56:58 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:16:43 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:13:25: error: initializer element is not constant
+   13 | S_node * G_Arr_ptr[2] ={head,head2};
+      |                         ^~~~
+..\LinkedList.c:13:25: note: (near initialization for 'G_Arr_ptr[0]')
+..\LinkedList.c:13:30: error: initializer element is not constant
+   13 | S_node * G_Arr_ptr[2] ={head,head2};
+      |                              ^~~~~
+..\LinkedList.c:13:30: note: (near initialization for 'G_Arr_ptr[1]')
+..\LinkedList.c:15:61: error: expected declaration specifiers or '...' before ')' token
+   15 | LinkedList_status Add_Node (uint32_t data ,/* S_node* head*/){
+      |                                                             ^
+17:17:29 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:13:25: warning: initialization of 'S_node *' {aka 'struct S_node *'} from incompatible pointer type 'S_node **' {aka 'struct S_node **'} [-Wincompatible-pointer-types]
+   13 | S_node * G_Arr_ptr[2] ={&head,&head2};
+      |                         ^
+..\LinkedList.c:13:25: note: (near initialization for 'G_Arr_ptr[0]')
+..\LinkedList.c:13:31: warning: initialization of 'S_node *' {aka 'struct S_node *'} from incompatible pointer type 'S_node **' {aka 'struct S_node **'} [-Wincompatible-pointer-types]
+   13 | S_node * G_Arr_ptr[2] ={&head,&head2};
+      |                               ^
+..\LinkedList.c:13:31: note: (near initialization for 'G_Arr_ptr[1]')
+..\LinkedList.c:15:61: error: expected declaration specifiers or '...' before ')' token
+   15 | LinkedList_status Add_Node (uint32_t data ,/* S_node* head*/){
+      |                                                             ^
+17:21:11 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:13:26: warning: initialization of 'S_node **' {aka 'struct S_node **'} from incompatible pointer type 'S_node *' {aka 'struct S_node *'} [-Wincompatible-pointer-types]
+   13 | S_node ** G_Arr_ptr[2] ={head,head2};
+      |                          ^~~~
+..\LinkedList.c:13:26: note: (near initialization for 'G_Arr_ptr[0]')
+..\LinkedList.c:13:26: error: initializer element is not constant
+..\LinkedList.c:13:26: note: (near initialization for 'G_Arr_ptr[0]')
+..\LinkedList.c:13:31: warning: initialization of 'S_node **' {aka 'struct S_node **'} from incompatible pointer type 'S_node *' {aka 'struct S_node *'} [-Wincompatible-pointer-types]
+   13 | S_node ** G_Arr_ptr[2] ={head,head2};
+      |                               ^~~~~
+..\LinkedList.c:13:31: note: (near initialization for 'G_Arr_ptr[1]')
+..\LinkedList.c:13:31: error: initializer element is not constant
+..\LinkedList.c:13:31: note: (near initialization for 'G_Arr_ptr[1]')
+..\LinkedList.c:15:19: error: conflicting types for 'Add_Node'
+   15 | LinkedList_status Add_Node (uint32_t data /* S_node* head*/){
+      |                   ^~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:37:19: note: previous declaration of 'Add_Node' was here
+   37 | LinkedList_status Add_Node (uint32_t data , S_node** head);
+      |                   ^~~~~~~~
+17:22:04 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:11:19: error: conflicting types for 'Add_Node'
+   11 | LinkedList_status Add_Node (uint32_t data /* S_node* head*/){
+      |                   ^~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:37:19: note: previous declaration of 'Add_Node' was here
+   37 | LinkedList_status Add_Node (uint32_t data , S_node** head);
+      |                   ^~~~~~~~
+17:22:12 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+17:24:17 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:24:32 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:26:39 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:110:2: error: too few arguments to function 'view_list'
+  110 |  view_list();
+      |  ^~~~~~~~~
+..\LinkedList.c:85:6: note: declared here
+   85 | void view_list (S_node** head){
+      |      ^~~~~~~~~
+..\LinkedList.c:111:2: error: too few arguments to function 'Delete_Node'
+  111 |  Delete_Node(2);
+      |  ^~~~~~~~~~~
+..\LinkedList.c:37:19: note: declared here
+   37 | LinkedList_status Delete_Node (uint32_t id ,S_node** head){
+      |                   ^~~~~~~~~~~
+17:26:57 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:28:25 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+17:29:19 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:31:07 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:32:44 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:38:37 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:38:59 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:40:11 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:40:30 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Delete_list':
+..\LinkedList.c:111:27: warning: initialization of 'S_node *' {aka 'struct S_node *'} from incompatible pointer type 'S_node **' {aka 'struct S_node **'} [-Wincompatible-pointer-types]
+  111 |   S_node * removed_node = head;
+      |                           ^~~~
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:40:49 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Delete_list':
+..\LinkedList.c:112:14: error: '*head' is a pointer; did you mean to use '->'?
+  112 |   *head=*head->nextptr;
+      |              ^~
+      |              ->
+17:41:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Delete_list':
+..\LinkedList.c:112:13: error: '*head' is a pointer; did you mean to use '->'?
+  112 |   *head=head->nextptr;
+      |             ^~
+      |             ->
+17:41:14 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:41:51 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Delete_list':
+..\LinkedList.c:111:27: warning: initialization of 'S_node *' {aka 'struct S_node *'} from incompatible pointer type 'S_node **' {aka 'struct S_node **'} [-Wincompatible-pointer-types]
+  111 |   S_node * removed_node = head;
+      |                           ^~~~
+gcc -o LinkedList.exe LinkedList.o 
+17:42:04 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+17:48:10 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:128:12: warning: passing argument 1 of 'Add_Node' makes pointer from integer without a cast [-Wint-conversion]
+  128 |   Add_Node(i,Ptr_to_ptr_Array[0]);
+      |            ^
+      |            |
+      |            uint32_t {aka unsigned int}
+..\LinkedList.c:14:43: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t' {aka 'unsigned int'}
+   14 | LinkedList_status Add_Node (ELEMENT_TYPE* data , S_node** head){
+..\LinkedList.c:134:12: warning: passing argument 1 of 'Add_Node' makes pointer from integer without a cast [-Wint-conversion]
+  134 |   Add_Node(i,Ptr_to_ptr_Array[1]);
+      |            ^
+      |            |
+      |            uint32_t {aka unsigned int}
+..\LinkedList.c:14:43: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t' {aka 'unsigned int'}
+   14 | LinkedList_status Add_Node (ELEMENT_TYPE* data , S_node** head){
+gcc -o LinkedList.exe LinkedList.o 
+17:48:24 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:128:12: warning: passing argument 1 of 'Add_Node' makes pointer from integer without a cast [-Wint-conversion]
+  128 |   Add_Node(i,Ptr_to_ptr_Array[0]);
+      |            ^
+      |            |
+      |            uint32_t {aka unsigned int}
+..\LinkedList.c:14:43: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t' {aka 'unsigned int'}
+   14 | LinkedList_status Add_Node (ELEMENT_TYPE* data , S_node** head){
+..\LinkedList.c:134:12: warning: passing argument 1 of 'Add_Node' makes pointer from integer without a cast [-Wint-conversion]
+  134 |   Add_Node(i,Ptr_to_ptr_Array[1]);
+      |            ^
+      |            |
+      |            uint32_t {aka unsigned int}
+..\LinkedList.c:14:43: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t' {aka 'unsigned int'}
+   14 | LinkedList_status Add_Node (ELEMENT_TYPE* data , S_node** head){
+gcc -o LinkedList.exe LinkedList.o 
+17:49:23 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:26:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:26:20: note: format string is defined here
+   26 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:34:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' {aka 'unsigned int *'} [-Wformat=]
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~
+      |                                  |
+      |                                  uint32_t * {aka unsigned int *}
+..\Linkedlist.h:21:15: note: in definition of macro 'DPRINTF'
+   21 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:34:20: note: format string is defined here
+   34 |   DPRINTF("Node = %d is added\n",data);
+      |                   ~^
+      |                    |
+      |                    int
+      |                   %n
+gcc -o LinkedList.exe LinkedList.o 
+17:50:13 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+18:00:08 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:121:19: error: conflicting types for 'List_get_length'
+  121 | LinkedList_status List_get_length(S_node ** head,uint32_t length){
+      |                   ^~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:42:19: note: previous declaration of 'List_get_length' was here
+   42 | LinkedList_status List_get_length(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~
+..\LinkedList.c: In function 'main':
+..\Linkedlist.h:19:24: warning: macro expands to multiple statements [-Wmultistatement-macros]
+   19 | #define DPRINTF(...)   fflush(stdout);\
+      |                        ^~~~~~
+..\LinkedList.c:153:3: note: in expansion of macro 'DPRINTF'
+  153 |   DPRINTF("List length = %d\n",len);
+      |   ^~~~~~~
+..\LinkedList.c:152:2: note: some parts of macro expansion are not guarded by this 'if' clause
+  152 |  if(List_get_length(Ptr_to_ptr_Array[0],len) == List_no_error)
+      |  ^~
+18:00:24 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:121:19: error: conflicting types for 'List_get_length'
+  121 | LinkedList_status List_get_length(S_node ** head,uint32_t length){
+      |                   ^~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:42:19: note: previous declaration of 'List_get_length' was here
+   42 | LinkedList_status List_get_length(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~
+18:00:58 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:153:5: warning: 'len' is used uninitialized in this function [-Wuninitialized]
+  153 |  if(List_get_length(Ptr_to_ptr_Array[0],len) == List_no_error)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+18:03:13 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:150:5: warning: 'len' is used uninitialized in this function [-Wuninitialized]
+  150 |  if(List_get_length(Ptr_to_ptr_Array[0],len) == List_no_error)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o LinkedList.exe LinkedList.o 
+18:05:25 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'List_get_length':
+..\LinkedList.c:135:9: warning: assignment to 'uint32_t *' {aka 'unsigned int *'} from 'uint32_t' {aka 'unsigned int'} makes pointer from integer without a cast [-Wint-conversion]
+  135 |  length = count;
+      |         ^
+gcc -o LinkedList.exe LinkedList.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:05:34 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+18:07:12 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:07:14 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -o LinkedList.exe LinkedList.o 
+18:08:40 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+18:09:10 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+18:09:52 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:176:2: error: expected ';' before '}' token
+  176 |  }
+      |  ^
+18:09:53 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'main':
+..\LinkedList.c:176:2: error: expected ';' before '}' token
+  176 |  }
+      |  ^
+18:09:59 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o 
+Info: Nothing to build for LinkedList
+19:06:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:15:2: error: unknown type name 'ELEMENT_TYPE'
+   15 |  ELEMENT_TYPE item;
+      |  ^~~~~~~~~~~~
+19:09:45 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c:6:9: warning: "/*" within comment [-Wcomment]
+    6 |  *      /*Student Database Using LinkedList Data structure*/
+      |          
+..\StudentDB.c:7:3: error: expected identifier or '(' before '/' token
+    7 |  */
+      |   ^
+19:10:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:28:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:28:20: note: format string is defined here
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:28:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:28:20: note: format string is defined here
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:36:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:36:20: note: format string is defined here
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:36:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:36:20: note: format string is defined here
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+..\LinkedList.c: In function 'Delete_Node':
+..\LinkedList.c:51:23: error: invalid operands to binary != (have 'S_student' {aka 'struct <anonymous>'} and 'uint32_t' {aka 'unsigned int'})
+   51 |    if(current -> item != id)
+      |       ~~~~~~~~~~~~~~~ ^~
+      |               |
+      |               S_student {aka struct <anonymous>}
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'view_list':
+..\LinkedList.c:102:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+  102 |   DPRINTF("%d->\t",temp->item);
+      |           ^~~~~~~~ ~~~~~~~~~~
+      |                        |
+      |                        S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:102:13: note: format string is defined here
+  102 |   DPRINTF("%d->\t",temp->item);
+      |            ~^
+      |             |
+      |             int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:102:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+  102 |   DPRINTF("%d->\t",temp->item);
+      |           ^~~~~~~~ ~~~~~~~~~~
+      |                        |
+      |                        S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:102:13: note: format string is defined here
+  102 |   DPRINTF("%d->\t",temp->item);
+      |            ~^
+      |             |
+      |             int
+19:10:19 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:28:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:28:20: note: format string is defined here
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:28:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:28:20: note: format string is defined here
+   28 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:36:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:36:20: note: format string is defined here
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:36:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |           ^~~~~~~~~~~~~~~~~~~~~~ ~~~~~
+      |                                  |
+      |                                  S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:36:20: note: format string is defined here
+   36 |   DPRINTF("Node = %d is added\n",*data);
+      |                   ~^
+      |                    |
+      |                    int
+..\LinkedList.c: In function 'Delete_Node':
+..\LinkedList.c:51:23: error: invalid operands to binary != (have 'S_student' {aka 'struct <anonymous>'} and 'uint32_t' {aka 'unsigned int'})
+   51 |    if(current -> item != id)
+      |       ~~~~~~~~~~~~~~~ ^~
+      |               |
+      |               S_student {aka struct <anonymous>}
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c: In function 'view_list':
+..\LinkedList.c:102:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+  102 |   DPRINTF("%d->\t",temp->item);
+      |           ^~~~~~~~ ~~~~~~~~~~
+      |                        |
+      |                        S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:102:13: note: format string is defined here
+  102 |   DPRINTF("%d->\t",temp->item);
+      |            ~^
+      |             |
+      |             int
+In file included from ..\LinkedList.c:8:
+..\LinkedList.c:102:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'S_student' {aka 'struct <anonymous>'} [-Wformat=]
+  102 |   DPRINTF("%d->\t",temp->item);
+      |           ^~~~~~~~ ~~~~~~~~~~
+      |                        |
+      |                        S_student {aka struct <anonymous>}
+..\Linkedlist.h:39:15: note: in definition of macro 'DPRINTF'
+   39 |       printf( __VA_ARGS__);\
+      |               ^~~~~~~~~~~
+..\LinkedList.c:102:13: note: format string is defined here
+  102 |   DPRINTF("%d->\t",temp->item);
+      |            ~^
+      |             |
+      |             int
+19:43:35 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:7:14: error: assignment to expression with array type
+    7 |  student.name= "Youssef Mohamed";
+      |              ^
+..\StudentDB.c:10:20: warning: passing argument 2 of 'Add_Node' from incompatible pointer type [-Wincompatible-pointer-types]
+   10 |  Add_Node(&student,StudentDB);
+      |                    ^~~~~~~~~
+      |                    |
+      |                    S_node * {aka struct S_node *}
+In file included from ..\StudentDB.c:1:
+..\Linkedlist.h:53:59: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+   53 | LinkedList_status Add_Node (ELEMENT_TYPE* data , S_node** head);
+      |                                                  ~~~~~~~~~^~~~
+19:43:48 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:22:22: error: assignment to expression with array type
+   22 |  new_node->item.name = data->name;
+      |                      ^
+19:46:19 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:22:9: error: expected expression before ']' token
+   22 |  strcpy(]new_node->item.name,data->name);
+      |         ^
+..\LinkedList.c:22:2: error: too few arguments to function 'strcpy'
+   22 |  strcpy(]new_node->item.name,data->name);
+      |  ^~~~~~
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: declared here
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\LinkedList.c:22:9: error: expected ';' before ']' token
+   22 |  strcpy(]new_node->item.name,data->name);
+      |         ^
+      |         ;
+..\LinkedList.c:22:9: error: expected statement before ']' token
+..\LinkedList.c:22:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   22 |  strcpy(]new_node->item.name,data->name);
+      |                             ^
+..\LinkedList.c:22:29: warning: statement with no effect [-Wunused-value]
+..\LinkedList.c:22:40: error: expected ';' before ')' token
+   22 |  strcpy(]new_node->item.name,data->name);
+      |                                        ^
+      |                                        ;
+..\LinkedList.c:22:40: error: expected statement before ')' token
+19:46:25 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:22:23: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy(new_node->item.name,data->name);
+      |         ~~~~~~~~~~~~~~^~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\LinkedList.c:22:33: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy(new_node->item.name,data->name);
+      |                             ~~~~^~~~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:7:14: error: assignment to expression with array type
+    7 |  student.name= "Youssef Mohamed";
+      |              ^
+19:47:33 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:7:16: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+    7 |  strcpy(student.name,"Youssef");
+      |         ~~~~~~~^~~~~
+      |                |
+      |                uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\StudentDB.c:1:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+StudentDB.o: In function `main':
+F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\LinkedList\Debug/../StudentDB.c:4: multiple definition of `main'
+LinkedList.o:F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\LinkedList\Debug/../LinkedList.c:164: first defined here
+collect2.exe: error: ld returned 1 exit status
+19:47:40 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+StudentDB.o: In function `main':
+F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\LinkedList\Debug/../StudentDB.c:4: multiple definition of `main'
+LinkedList.o:F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\LinkedList\Debug/../LinkedList.c:164: first defined here
+collect2.exe: error: ld returned 1 exit status
+19:48:03 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:22:23: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy(new_node->item.name,data->name);
+      |         ~~~~~~~~~~~~~~^~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\LinkedList.c:22:33: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy(new_node->item.name,data->name);
+      |                             ~~~~^~~~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\LinkedList.c: At top level:
+..\LinkedList.c:201:1: error: expected identifier or '(' before '}' token
+  201 | }
+      | ^
+..\LinkedList.c:203:2: error: expected identifier or '(' before '/' token
+  203 | */
+      |  ^
+19:49:19 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Add_Node':
+..\LinkedList.c:22:24: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy((new_node->item.name),(data->name));
+      |         ~~~~~~~~~~~~~~~^~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\LinkedList.c:22:36: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   22 |  strcpy((new_node->item.name),(data->name));
+      |                               ~~~~~^~~~~~~
+      |                                    |
+      |                                    uint8_t * {aka unsigned char *}
+In file included from ..\Linkedlist.h:14,
+                 from ..\LinkedList.c:8:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+19:50:00 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+19:50:53 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+19:55:51 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:55:54 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+22:19:43 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'Delete_Node':
+..\LinkedList.c:60:22: error: invalid type argument of '->' (have 'S_student' {aka 'struct <anonymous>'})
+   60 |    if(current -> item->id != id)
+      |                      ^~
+22:19:56 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:20:35 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:16:17: warning: passing argument 2 of 'Delete_Node' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |  Delete_Node(23,StudentDB);
+      |                 ^~~~~~~~~
+      |                 |
+      |                 S_node * {aka struct S_node *}
+In file included from ..\StudentDB.c:1:
+..\Linkedlist.h:54:54: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+   54 | LinkedList_status Delete_Node (uint32_t id ,S_node** head);
+      |                                             ~~~~~~~~~^~~~
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:20:44 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:21:10 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:21:37 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:23:05 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:23:40 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:24:21 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+22:25:11 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:25:28 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:26:53 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:27:29 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:28:05 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:29:53 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:30:08 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:30:27 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:30:45 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:31:27 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+22:34:14 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:39:37 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:43: warning: passing argument 1 of 'List_Reverse_traverse' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |  else return List_Reverse_traverse((*head)->nextptr);
+      |                                    ~~~~~~~^~~~~~~~~
+      |                                           |
+      |                                           S_node * {aka struct S_node *}
+..\LinkedList.c:164:38: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+  164 | void List_Reverse_traverse(S_node ** head){
+      |                            ~~~~~~~~~~^~~~
+22:40:32 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:42: error: '*head' is a pointer; did you mean to use '->'?
+  166 |  else return List_Reverse_traverse((head)->nextptr);
+      |                                          ^~
+      |                                          ->
+..\LinkedList.c:166:14: warning: 'return' with a value, in function returning void [-Wreturn-type]
+  166 |  else return List_Reverse_traverse((head)->nextptr);
+      |              ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c:164:6: note: declared here
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+22:40:40 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:40: error: '*head' is a pointer; did you mean to use '->'?
+  166 |  else return List_Reverse_traverse(head->nextptr);
+      |                                        ^~
+      |                                        ->
+..\LinkedList.c:166:14: warning: 'return' with a value, in function returning void [-Wreturn-type]
+  166 |  else return List_Reverse_traverse(head->nextptr);
+      |              ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c:164:6: note: declared here
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+22:40:41 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:40: error: '*head' is a pointer; did you mean to use '->'?
+  166 |  else return List_Reverse_traverse(head->nextptr);
+      |                                        ^~
+      |                                        ->
+..\LinkedList.c:166:14: warning: 'return' with a value, in function returning void [-Wreturn-type]
+  166 |  else return List_Reverse_traverse(head->nextptr);
+      |              ^~~~~~~~~~~~~~~~~~~~~
+..\LinkedList.c:164:6: note: declared here
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+22:41:28 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:34:2: warning: "/*" within comment [-Wcomment]
+   34 |  /*
+      |   
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+22:41:54 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c:164:6: error: conflicting types for 'List_Reverse_traverse'
+  164 | void List_Reverse_traverse(S_node ** head){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\LinkedList.c:8:
+..\Linkedlist.h:58:19: note: previous declaration of 'List_Reverse_traverse' was here
+   58 | LinkedList_status List_Reverse_traverse(S_node ** head);
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+22:42:12 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+..\StudentDB.c: In function 'main':
+..\StudentDB.c:34:2: warning: "/*" within comment [-Wcomment]
+   34 |  /*
+      |   
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:42:37 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:43: warning: passing argument 1 of 'List_Reverse_traverse' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |  else return List_Reverse_traverse((*head)->nextptr));
+      |                                    ~~~~~~~^~~~~~~~~
+      |                                           |
+      |                                           S_node * {aka struct S_node *}
+..\LinkedList.c:164:38: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+  164 | void List_Reverse_traverse(S_node ** head){
+      |                            ~~~~~~~~~~^~~~
+..\LinkedList.c:166:53: error: expected ';' before ')' token
+  166 |  else return List_Reverse_traverse((*head)->nextptr));
+      |                                                     ^
+      |                                                     ;
+..\LinkedList.c:166:2: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+  166 |  else return List_Reverse_traverse((*head)->nextptr));
+      |  ^~~~
+..\LinkedList.c:166:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  166 |  else return List_Reverse_traverse((*head)->nextptr));
+      |                                                     ^
+..\LinkedList.c:166:53: error: expected statement before ')' token
+22:42:44 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+..\LinkedList.c: In function 'List_Reverse_traverse':
+..\LinkedList.c:166:43: warning: passing argument 1 of 'List_Reverse_traverse' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |  else return List_Reverse_traverse((*head)->nextptr);
+      |                                    ~~~~~~~^~~~~~~~~
+      |                                           |
+      |                                           S_node * {aka struct S_node *}
+..\LinkedList.c:164:38: note: expected 'S_node **' {aka 'struct S_node **'} but argument is of type 'S_node *' {aka 'struct S_node *'}
+  164 | void List_Reverse_traverse(S_node ** head){
+      |                            ~~~~~~~~~~^~~~
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+22:42:53 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:44:00 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+Info: Nothing to build for LinkedList
+22:46:32 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:46:46 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedList.o "..\\LinkedList.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList
+22:47:51 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o StudentDB.o "..\\StudentDB.c" 
+gcc -o LinkedList.exe LinkedList.o StudentDB.o 
+Info: Nothing to build for LinkedList

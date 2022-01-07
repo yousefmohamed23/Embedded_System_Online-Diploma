@@ -1,0 +1,34 @@
+/*
+ * StudentDB.h
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#ifndef STUDENTDB_H_
+#define STUDENTDB_H_
+
+#include "Linkedlist.h"
+#include "string.h"
+#undef ELEMENT_TYPE
+// student data
+typedef struct {
+	uint8_t day;
+	uint8_t month;
+	uint32_t year;
+}S_Birth_date;
+
+typedef struct {
+	uint8_t name[40];
+	uint8_t id;
+	float height;
+	S_Birth_date birth;
+}S_student;
+#define ELEMENT_TYPE S_student
+
+
+
+
+
+
+#endif /* STUDENTDB_H_ */

@@ -1,0 +1,202 @@
+/*
+ * LinkedList.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#include "Linkedlist.h"
+
+
+LinkedList_status Add_Node (ELEMENT_TYPE*data , S_node** head){
+
+	//create new node for data
+	if(data == NULL) return List_is_null;
+
+	S_node* new_node = (S_node*) malloc(sizeof(S_node));
+
+	// set data
+	//new_node->item.birth.day = data->birth.day;
+	//new_node->item.birth.month = data->birth.month;
+	//new_node->item.birth.year = data->birth.year;
+	strcpy((new_node->item.name),(data->name));
+	new_node->item.id = data->id;
+	new_node->item.height = data->height;
+
+	//if list is empty
+	if(*head == NULL) //FIRST NODE TO BE ADDED
+	{
+		*head = new_node;
+		new_node->nextptr = NULL;
+
+
+	}
+	else
+	{
+		S_node * temp = new_node;
+		new_node->nextptr= *head;
+		*head= temp;
+	}
+	DPRINTF("Name = %s\n",new_node->item.name);
+	DPRINTF("id = %d\n",new_node->item.id);
+	DPRINTF("height = %f\n",new_node->item.height);
+	//DPRINTF("Birthday = %d-%d-%d\n",new_node->item.birth.day,
+		//	new_node->item.birth.month
+			//,new_node->item.birth.year);
+	return List_no_error;
+
+}
+
+LinkedList_status Delete_Node (uint32_t id ,S_node** head){
+
+	if(*head == NULL ) return List_is_null;
+	else
+	{
+		S_node * current =*head;
+		S_node * prev =NULL;
+
+		while(current != NULL)
+		{
+			if(current -> item->id != id)
+			{
+				S_node* temp = current;
+				current = current->nextptr;
+				prev=temp;
+				DPRINTF("Student id = %d is not found\n",id);
+
+			}
+			else
+			{
+				DPRINTF("Student id = %d is  found\n",id);
+				//id at begin
+				if(prev == NULL)
+				{
+					*head = current->nextptr;
+					free(current);
+					DPRINTF("Student id=%d is  removed\n",id);
+
+				}
+				// id at last
+				else if(current->nextptr == NULL)
+				{
+					prev->nextptr = NULL;
+					free(current);
+					DPRINTF("Node = %d is  removed\n",id);
+
+				}
+				// in the middle
+				else {
+					prev -> nextptr = current->nextptr;
+					free(current);
+					DPRINTF("Node = %d is  removed\n",id);
+				}
+				return List_no_error;
+			}
+		}
+		return List_no_error;
+	}
+}
+
+/*
+LinkedList_status view_list (S_node** head){
+	if(*head == NULL)
+	{
+		DPRINTF("List is empty");
+		return list_Empty;
+	}
+	S_node * temp =*head;
+
+
+	while(temp != NULL)
+	{
+		DPRINTF("%d->\t",temp->item);
+		temp=temp->nextptr;
+	}
+	DPRINTF("\n");
+	return List_no_error;
+}
+
+LinkedList_status Delete_list (S_node ** head)
+{
+	if(*head == NULL)
+	{
+		return list_Empty;
+		DPRINTF("List is empty\n");
+	}
+	S_node * temp =*head;
+	while(temp != NULL)
+	{
+		S_node * removed_node = temp;
+		temp=temp->nextptr;
+		free(removed_node);
+
+	}
+	*head=NULL;
+
+	DPRINTF("List is removed\n");
+
+	return List_no_error;
+
+}
+
+LinkedList_status List_get_length(S_node ** head,uint32_t* length){
+	if(*head == NULL)
+	{
+		length = 0;
+		return list_Empty;
+	}
+	S_node *temp =*head;
+	uint32_t count=0;
+
+	while(temp !=NULL)
+	{
+		count++;
+		temp=temp->nextptr;
+	}
+	*length = count;
+	return List_no_error;
+}
+
+
+//client
+
+int main()
+{
+	// ADD 1 TO 5 TO LIST
+	ELEMENT_TYPE i =1;
+	unsigned int len;
+	for(i=1; i < 5 ;i++)
+	{
+		Add_Node(&i,Ptr_to_ptr_Array[0]);
+	}
+	if(List_get_length(Ptr_to_ptr_Array[0],&len) == List_no_error)
+	{
+		DPRINTF("List length = %d\n",len);
+	}
+	DPRINTF("List 1\n");
+	view_list(Ptr_to_ptr_Array[0]);
+
+
+	for(i=5; i < 9 ;i++)
+	{
+		Add_Node(&i,Ptr_to_ptr_Array[1]);
+	}
+	DPRINTF("List 2\n");
+
+	view_list(Ptr_to_ptr_Array[1]);
+	if(List_get_length(Ptr_to_ptr_Array[1],&len) == List_no_error)
+	{
+			DPRINTF("List length 2 = %d\n",len);
+	}
+	Delete_list(Ptr_to_ptr_Array[1]);
+	if(List_get_length(Ptr_to_ptr_Array[1],&len) == List_no_error)
+		{
+				DPRINTF("List length 2 = %d\n",len);
+		}
+	else {
+		DPRINTF("List is deleted \n");
+	}
+	List_get_length(Ptr_to_ptr_Array[1],&len);
+	view_list(Ptr_to_ptr_Array[0]);*/
+
+

@@ -1,0 +1,42 @@
+/*
+ * Linkedlist.h
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#ifndef LINKEDLIST_H_
+#define LINKEDLIST_H_
+#include "stdlib.h"
+#include "stdio.h"
+#include "stdint.h"
+typedef struct S_node S_node;
+struct S_node {
+	uint32_t item;
+	S_node  *nextptr;
+};
+#define DPRINTF(...)   fflush(stdout);\
+						fflush(stdin);\
+						printf( __VA_ARGS__);\
+						fflush(stdout);\
+						fflush(stdin)
+
+
+typedef enum {
+	List_is_null,
+	Add_Not_done,
+	Remove_Not_done,
+	list_Empty,
+	list_Not_empty,
+	List_no_error,
+	item_not_exist
+
+}LinkedList_status;
+
+//API's
+LinkedList_status Add_Node (uint32_t data , S_node** head);
+LinkedList_status Delete_Node (uint32_t id ,S_node** head);
+void view_list (/*S_node * head*/);
+
+
+#endif /* LINKEDLIST_H_ */

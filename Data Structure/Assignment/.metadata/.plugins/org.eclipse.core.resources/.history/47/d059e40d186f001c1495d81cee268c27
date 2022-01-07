@@ -1,0 +1,10 @@
+#include "Linkedlist.h"
+int main()
+{
+	//Test Add Student
+	S_student student;
+
+
+
+
+}

@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 5, 2022
+ *      Author: youssef Mohamed Abo el maaty
+ */
+#include "LIFO.h"
+int main()
+{
+	int i = 0 , temp = 0;
+	LIFO_buffer_S* lifo;
+	ELEMENT_TYPE buffer_container[5];
+	//init buffer
+	if(LIFO_init(&lifo , buffer_container,5) == LIFO_NO_ERROR)
+		printf("Lifo is Ready ......\n");
+	for(i=0 ; i<7 ; i++)
+	{
+		LIFO_push(&lifo,i);
+	}
+
+}
+

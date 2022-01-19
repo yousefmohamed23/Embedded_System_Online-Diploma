@@ -1,0 +1,68 @@
+/*
+ * studentDB.h
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#ifndef STUDENTDB_H_
+#define STUDENTDB_H_
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+#include "stdint.h"
+
+#define DPRINTF(...)   fflush(stdout);\
+						fflush(stdin);\
+						printf( __VA_ARGS__);\
+						fflush(stdout);\
+						fflush(stdin)
+
+
+//Student DataBase Attributes
+/*typedef struct {
+	uint8_t day;
+	uint8_t month;
+	uint32_t year;
+
+} S_birth_date ;
+ */
+#define NAME_SIZE 40
+
+typedef struct
+{
+	uint8_t name[NAME_SIZE];
+	uint32_t Id;
+	float height;
+	//S_birth_date birthday;
+
+}S_student;
+typedef struct S_Node S_Node;
+struct S_Node {
+	S_student data;
+	S_Node * p_next;
+};
+
+//global pointer to first Node
+S_Node* g_firststudent = NULL;
+
+typedef enum {
+	List_error,
+	List_no_error,
+	list_not_found
+}List_status;
+//API's
+//Add Student
+
+List_status List_print_Student(S_student* student);
+List_status List_Add_Student(S_student* student);
+List_status List_Delete_Student(uint8_t ID);
+List_status List_View_All(void);
+List_status List_Delete_All(void);
+List_status List_GetLength(uint32_t * length);
+void List_Reverse_Traverse(S_Node* head_reverse);
+
+
+
+#endif /* STUDENTDB_H_ */

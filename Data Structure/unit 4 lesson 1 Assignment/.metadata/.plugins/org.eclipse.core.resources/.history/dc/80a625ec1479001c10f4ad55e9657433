@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+
+// client
+#include "studentDB.h"
+int main()
+{
+	DPRINTF("============\n        Choose one of the following options\n");
+	do{
+
+	}while();
+}

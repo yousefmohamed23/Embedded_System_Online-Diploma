@@ -1,0 +1,17 @@
+/*
+ * StudentDB.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#include "studentDB.h"
+List_status List_print_Student(S_student* student){
+
+}
+List_status List_Add_Student(S_student* student){}
+List_status List_Delete_Student(uint8_t ID){}
+List_status List_View_All(void){}
+List_status List_Delete_All(void){}
+List_status List_GetLength(uint32_t * length){}
+void List_Reverse_Traverse(S_Node* head_reverse){}

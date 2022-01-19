@@ -1,0 +1,83 @@
+/*
+ * StudentDB.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#include "studentDB.h"
+S_Node* g_firststudent = NULL;
+
+List_status List_print_Student(S_student* student){
+	if(g_firststudent == NULL || student == NULL) return List_error;
+	DPRINTF("Student id = %d \n",student->Id);
+	DPRINTF("Student name = %s \n",student->name);
+	DPRINTF("Student height = %f \n",student->height);
+	return List_no_error;
+}
+List_status List_Add_Student(S_student* student){
+	if(student == NULL) return List_error;
+	// CREATE NEW NODE USING DYNAMIC ALLOCATION
+	S_Node * new_Student = (S_Node*) malloc(sizeof(S_Node));
+
+	//SET NEW STUDENT DATA
+	new_Student->data.Id=student->Id;  //Set Id
+	new_Student->data.height=student->height; // Set height
+	strcpy(new_Student->data.name,student->name); // Set name
+	//Add new student in the list
+
+	//if the new student is the first in the list
+	if(g_firststudent == NULL)
+	{
+		g_firststudent = new_Student;
+		new_Student->p_next=NULL;
+	}
+	else
+	{
+		//Add new student to the end of the list
+		// loop till reach last student then add the student
+		S_Node* temp = g_firststudent;
+		while(temp->p_next!= NULL)
+		{
+			temp = temp->p_next;
+		}
+		temp->p_next = new_Student;
+		new_Student->p_next=NULL;
+	}
+
+	return List_no_error;
+
+}
+List_status List_View_All(void){
+	if(g_firststudent == NULL) return List_error;
+	S_Node* temp = g_firststudent;
+	uint32_t Record_Number=0;
+	while(temp!= NULL)
+	{
+		DPRINTF("\n============");
+		DPRINTF("\nRecord Number = %d\n\n",++Record_Number);
+		List_print_Student(&(temp->data));
+		DPRINTF("\n============\n");
+		temp = temp->p_next;
+	}
+	return List_no_error;
+
+}
+
+List_status List_Delete_Student(uint8_t ID){
+	if(g_firststudent == NULL) return List_error;
+	S_Node* prev =NULL;
+	S_Node * current = g_firststudent;
+	//loop until find id or not
+	while(current !=NULL)
+	{
+		if(current->data.Id == ID)
+		{
+
+		}
+	}
+}
+//
+//List_status List_Delete_All(void){}
+//List_status List_GetLength(uint32_t * length){}
+//void List_Reverse_Traverse(S_Node* head_reverse){}

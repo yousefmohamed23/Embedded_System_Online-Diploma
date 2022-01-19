@@ -1,0 +1,20 @@
+#include "Linkedlist.h"
+S_node * StudentDB ;
+int main()
+{
+	//Test Add Student
+	S_student student;
+	strcpy(student.name,"Youssef");
+	student.id=123;
+	student.height = 75;
+	Add_Node(&student,&StudentDB);
+	S_student student2;
+	strcpy(student2.name,"ahmed");
+	student.id=23;
+	student.height = 75;
+	Add_Node(&student2,&StudentDB);
+	Delete_Node(23,StudentDB)
+
+
+
+}

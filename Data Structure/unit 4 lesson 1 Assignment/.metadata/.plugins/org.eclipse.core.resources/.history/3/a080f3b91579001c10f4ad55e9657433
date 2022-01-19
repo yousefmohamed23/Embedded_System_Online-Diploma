@@ -1,0 +1,42 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+
+// client
+#include "studentDB.h"
+int main()
+{
+	DPRINTF("============\n        Choose one of the following options\n");
+	uint8_t optionNum=0 ;
+	do{
+
+		DPRINTF("1- AddStudent\n");
+		DPRINTF("2- Delete_Student\n");
+		DPRINTF("3- view_Students\n");
+		DPRINTF("4- Delete All\n");
+		DPRINTF("Enter Option Number :");
+		scanf(&optionNum);
+		fflush(stdin);
+		fflush(stdout);
+		DPRINTF("\n");
+		switch(optionNum)
+		{
+		case 1:
+			S_student student;
+			List_Add_Student(&student);
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		default:
+			break;
+		}
+	}while();
+}

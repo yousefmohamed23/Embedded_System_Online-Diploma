@@ -1,0 +1,104 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+
+// client
+#include "studentDB.h"
+
+int main()
+{
+	DPRINTF("============\n        Choose one of the following options\n============\n");
+	int optionNum=0 ;
+	do{
+
+		DPRINTF("1- AddStudent\n");
+		DPRINTF("2- Delete_Student\n");
+		DPRINTF("3- view_Students\n");
+		DPRINTF("4- Delete All\n");
+		DPRINTF("5- Number_of_Students\n");
+		DPRINTF("Enter Option Number :");
+		scanf("%d",&optionNum);
+		fflush(stdin);
+		fflush(stdout);
+		S_student s;
+		uint32_t id=0;
+
+
+		switch(optionNum)
+		{
+		case 1:
+			DPRINTF("\n============");
+			// get student data from client
+			DPRINTF("\nEnter the ID :");
+			scanf("%d",&(s.Id));
+			DPRINTF("\nEnter Student Full Name :");
+			gets(s.name);
+			DPRINTF("\nEnter the Height :");
+			scanf("%f",&(s.height));
+			if(List_Add_Student(&s) == List_no_error)
+			{DPRINTF("\nStudent is added");}
+			else
+			{DPRINTF("\nStudent is not added");}
+			DPRINTF("\n============\n");
+			break;
+		case 2:
+			DPRINTF("\n============\n");
+			DPRINTF("\nEnter the ID :");
+			scanf("%d",&id);
+			if(List_Delete_Student(id) == List_no_error)
+			{
+				DPRINTF("\nStudent with id = %d is deleted\n",id);
+			}
+			else
+			{
+				DPRINTF("\nStudent with id = %d is not found in the list \n",id);
+
+			}
+			DPRINTF("\n============\n");
+			break;
+		case 3:
+			if(List_View_All()== List_no_error)
+			{
+
+			}
+			else
+			{
+				DPRINTF("======\nEmpty List\n======");
+			}
+			break;
+		case 4:
+			if(List_Delete_All()==List_no_error)
+			{
+				DPRINTF("======\nDeletion is done\n ======\n");
+			}
+			else
+			{
+				DPRINTF("======\nNo students are existed\n=======\n");
+			}
+			break;
+		case 5:
+
+		{
+			unsigned int  len =0;
+			if(List_GetLength(&len) ==List_no_error)
+			{
+				DPRINTF("\n Number of student = %d\n",len);
+			}
+			else
+			{
+				DPRINTF("======\nEmpty List\n======");
+			}
+		}
+		break;
+		default:
+			DPRINTF("\n============");
+			DPRINTF("\nWrong option , Try again 'Note : Options are from 1 to 4'");
+			DPRINTF("\n============\n");
+			break;
+		}
+	}while(1);
+}

@@ -1,0 +1,12 @@
+#include "Linkedlist.h"
+int main()
+{
+	//Test Add Student
+	S_student student;
+	student.name= "Youssef Mohamed";
+	student.id=123;
+	student.height = 75;
+
+
+
+}

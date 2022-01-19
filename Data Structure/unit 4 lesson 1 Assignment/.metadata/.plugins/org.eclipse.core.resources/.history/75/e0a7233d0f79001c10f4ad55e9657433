@@ -1,0 +1,14 @@
+/*
+ * StudentDB.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+#include "studentDB.h"
+StudentDB_status Add_student(S_student* student){
+
+}
+StudentDB_status Delete_student(uint8_t ID){}
+void View_student(S_Node* head){}
+void Delete_all(S_Node* head){}

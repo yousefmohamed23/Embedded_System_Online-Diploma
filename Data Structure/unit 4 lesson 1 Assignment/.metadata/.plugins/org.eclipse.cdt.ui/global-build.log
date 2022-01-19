@@ -1,0 +1,317 @@
+13:30:32 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+13:33:58 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:12: warning: unused variable 'id' [-Wunused-variable]
+   27 |   uint32_t id=0;
+      |            ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:34:04 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+13:35:04 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:35:05 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+13:47:15 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:51:10: warning: passing argument 1 of 'scanf' from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |    scanf(&id);
+      |          ^~~
+      |          |
+      |          uint32_t * {aka unsigned int *}
+In file included from ..\studentDB.h:10,
+                 from ..\main.c:10:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:394:47: note: expected 'const char * restrict' but argument is of type 'uint32_t *' {aka 'unsigned int *'}
+  394 |   int __cdecl scanf(const char * __restrict__ _Format,...) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:47:33 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:47:39 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+13:58:38 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:58:43 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+13:59:49 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:59:50 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:00:09 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:00:11 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:02:07 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:02:08 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:08:28 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:84:4: error: a label can only be part of a statement and a declaration is not a statement
+   84 |    int len =0;
+      |    ^~~
+..\main.c:85:22: warning: pointer targets in passing argument 1 of 'List_GetLength' differ in signedness [-Wpointer-sign]
+   85 |    if(List_GetLength(&len) ==List_no_error)
+      |                      ^~~~
+      |                      |
+      |                      int *
+In file included from ..\main.c:10:
+..\studentDB.h:62:39: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'int *'
+   62 | List_status List_GetLength(uint32_t * length);
+      |                            ~~~~~~~~~~~^~~~~~
+14:08:54 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:84:4: error: a label can only be part of a statement and a declaration is not a statement
+   84 |    uint32_t len =0;
+      |    ^~~~~~~~
+14:09:17 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:84:4: error: a label can only be part of a statement and a declaration is not a statement
+   84 |    unsigned int  len =0;
+      |    ^~~~~~~~
+14:11:29 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:11:33 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:11:54 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:12:23 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+14:13:13 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:13:15 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+14:15:02 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:15:04 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+14:36:26 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:114:24: warning: passing argument 1 of 'List_print_Student' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |     List_print_Student(&s);
+      |                        ^~
+      |                        |
+      |                        S_student ** {aka struct <anonymous> **}
+In file included from ..\main.c:10:
+..\studentDB.h:57:43: note: expected 'S_student *' {aka 'struct <anonymous> *'} but argument is of type 'S_student **' {aka 'struct <anonymous> **'}
+   57 | List_status List_print_Student(S_student* student);
+      |                                ~~~~~~~~~~~^~~~~~~
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:36:37 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:36:40 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+14:38:01 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:38:02 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+Info: Nothing to build for StudentDataBase_LinkedList
+15:03:38 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:123:26: error: 'g_firststudent' undeclared (first use in this function)
+  123 |    List_Reverse_Traverse(g_firststudent);
+      |                          ^~~~~~~~~~~~~~
+..\main.c:123:26: note: each undeclared identifier is reported only once for each function it appears in
+15:06:45 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:06:48 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+15:28:04 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:28:08 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+15:32:42 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:135:6: warning: implicit declaration of function 'List_GetNthFromEnd_Student'; did you mean 'List_GetNthFromEnd_Student_'? [-Wimplicit-function-declaration]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      List_GetNthFromEnd_Student_
+..\main.c:135:5: warning: assignment to 'S_student *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |     ^
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:34:14 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:135:6: warning: implicit declaration of function 'List_GetNthFromEnd_Student'; did you mean 'List_GetNthFromEnd_Student_'? [-Wimplicit-function-declaration]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      List_GetNthFromEnd_Student_
+..\main.c:135:5: warning: assignment to 'S_student *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |     ^
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+main.o: In function `main':
+F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\StudentDataBase_LinkedList\Debug/../main.c:135: undefined reference to `List_GetNthFromEnd_Student'
+collect2.exe: error: ld returned 1 exit status
+15:34:37 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+main.o: In function `main':
+F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\StudentDataBase_LinkedList\Debug/../main.c:135: undefined reference to `List_GetNthFromEnd_Student'
+collect2.exe: error: ld returned 1 exit status
+15:34:41 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+main.o: In function `main':
+F:\Embedded System Online diploma Keroles\Unit 4 Data Structure\Assignment\StudentDataBase_LinkedList\Debug/../main.c:135: undefined reference to `List_GetNthFromEnd_Student'
+collect2.exe: error: ld returned 1 exit status
+15:34:55 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+16:35:29 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:35:34 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList
+17:10:49 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:135:6: warning: implicit declaration of function 'List_GetNthFromEnd_Student'; did you mean 'List_GetNthFromEnd_Student_'? [-Wimplicit-function-declaration]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      List_GetNthFromEnd_Student_
+..\main.c:135:5: warning: assignment to 'S_student *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  135 |    s=List_GetNthFromEnd_Student(index);
+      |     ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:11:25 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o studentDB.o "..\\studentDB.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file StudentDataBase_LinkedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:11:34 **** Incremental Build of configuration Debug for project StudentDataBase_LinkedList ****
+Info: Internal Builder is used for build
+gcc -o StudentDataBase_LinkedList.exe main.o studentDB.o 
+Info: Nothing to build for StudentDataBase_LinkedList

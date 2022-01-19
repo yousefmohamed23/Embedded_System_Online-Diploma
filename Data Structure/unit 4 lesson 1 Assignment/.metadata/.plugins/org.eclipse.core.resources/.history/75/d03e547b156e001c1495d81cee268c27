@@ -1,0 +1,51 @@
+/*
+ * FIFO.c
+ *
+ *  Created on: Jan 5, 2022
+ *      Author: youss
+ */
+
+
+#include "LIFO.h"
+
+
+LIFO_bufffer_status LIFO_init(LIFO_buffer_S *lifo , ELEMENT_TYPE *container , ELEMENT_TYPE capacity)
+{
+	//check if lifo structure and container are existed
+	if(lifo == NULL || container == NULL)
+		return LIFO_IS_NULL;
+
+	//if NO init lifo struct
+	lifo->base= container;
+	lifo->head = container;
+	lifo->count=0;
+	lifo->capacity = capacity;
+	return LIFO_NO_ERROR;
+}
+
+LIFO_bufffer_status LIFO_push (LIFO_buffer_S* lifo , ELEMENT_TYPE item){
+	if(lifo == NULL) return LIFO_IS_NULL;
+
+	//check if lifo is fulL
+	if(LIFO_is_full(&lifo)) return LIFO_IS_FULL;
+
+	//PUSH ITEM IN LIFO
+	lifo->count++;
+	lifo->head = item;
+
+
+}
+
+LIFO_bufffer_status LIFO_pop (LIFO_buffer_S* lifo , ELEMENT_TYPE * returned_item){
+
+}
+
+unsigned char  LIFO_is_full (LIFO_buffer_S* lifo){
+	if(lifo->count == lifo->capacity) return 1;
+	return 0;
+}
+
+unsigned char LIFO_is_empty (LIFO_buffer_S* lifo){
+	if(lifo->count==0) return 1;
+	return 0;
+}

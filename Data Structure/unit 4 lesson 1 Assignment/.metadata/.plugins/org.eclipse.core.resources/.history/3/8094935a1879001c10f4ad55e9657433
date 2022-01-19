@@ -1,0 +1,81 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 6, 2022
+ *      Author: youss
+ */
+
+
+// client
+#include "studentDB.h"
+int main()
+{
+	DPRINTF("============\n        Choose one of the following options\n");
+	uint8_t optionNum=0 ;
+	do{
+
+		DPRINTF("1- AddStudent\n");
+		DPRINTF("2- Delete_Student\n");
+		DPRINTF("3- view_Students\n");
+		DPRINTF("4- Delete All\n");
+		DPRINTF("Enter Option Number :");
+		scanf(&optionNum);
+		fflush(stdin);
+		fflush(stdout);
+
+		switch(optionNum)
+		{
+		case 1:
+			S_student student;
+			// get student data from client
+			DPRINTF("\nEnter the ID :");
+			scanf(&(student.Id));
+			DPRINTF("\nEnter Student Full Name :");
+			get(student->name);
+			DPRINTF("\nEnter the Height :");
+			scanf(&(student.height));
+			if(List_Add_Student(&student) == List_no_error)
+			{DPRINTF("Student is added\n");}
+			else
+			{DPRINTF("Student is not added\n");}
+			break;
+		case 2:
+			uint32_t id;
+			DPRINTF("\nEnter the ID :");
+			scanf(&id);
+			if(List_Delete_Student(id) == List_no_error)
+			{
+				DPRINTF("\nStudent with id = %d is deleted\n",id);
+			}
+			else
+			{
+				DPRINTF("\nStudent with id = %d is not found in the list \n",id);
+
+			}
+			break;
+		case 3:
+			if(List_View_All()== List_no_error)
+			{
+
+			}
+			else
+			{
+				DPRINTF("======\nEmpty List\n======");
+			}
+			break;
+		case 4:
+			if(List_Delete_All()==List_no_error)
+			{
+				DPRINTF("======\nDeletion is done\n ======");
+			}
+			else
+			{
+				DPRINTF("======\nNo students are existed\n=======");
+			}
+			break;
+		default:
+
+			break;
+		}
+	}while();
+}

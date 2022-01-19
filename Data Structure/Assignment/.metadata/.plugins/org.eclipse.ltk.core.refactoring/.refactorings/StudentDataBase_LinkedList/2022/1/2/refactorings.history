@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;StudentDataBase_LinkedList/StudentDB.c&apos; to &apos;studentDB.c&apos;" description="Rename resource &apos;StudentDB.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="StudentDB.c" name="studentDB.c" stamp="1641464915905" updateReferences="true"/>
-</session>

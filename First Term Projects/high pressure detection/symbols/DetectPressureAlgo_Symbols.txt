@@ -1,0 +1,9 @@
+00000004 C DETECT_PRESSURE_ALGO_state
+00000001 C DETECT_PRESSURE_ALGO_state_id
+00000000 B Detected_pressure
+00000000 D pressure_threshold
+00000000 T read_pressure_value
+         U start_alarm
+00000060 T State_DETECT_PRESSURE_ALGO_high
+00000084 T State_DETECT_PRESSURE_ALGO_low
+00000048 T State_DETECT_PRESSURE_ALGO_reading

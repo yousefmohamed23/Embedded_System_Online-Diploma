@@ -1,0 +1,29 @@
+
+PressureSensor.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000006c  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000a0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00000000  00000000  000000a0  2**2
+                  ALLOC
+  3 .debug_info   00000a1e  00000000  00000000  000000a0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 000001d4  00000000  00000000  00000abe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    0000009c  00000000  00000000  00000c92  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000d2e  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   000002b8  00000000  00000000  00000d4e  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    000005da  00000000  00000000  00001006  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  000015e0  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  00000068  00000000  00000000  0000165c  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  000016c4  2**0
+                  CONTENTS, READONLY

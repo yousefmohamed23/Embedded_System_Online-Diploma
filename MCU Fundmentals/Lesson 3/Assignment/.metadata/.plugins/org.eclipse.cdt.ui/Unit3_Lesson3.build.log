@@ -1,0 +1,23 @@
+21:51:10 **** Build of configuration Debug for project Unit3_Lesson3 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Unit3_Lesson3.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Embedded System Online diploma Keroles\second term\unit 6 MCU Fundamentals\lesson 3\Assignment\Unit3_Lesson3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit3_Lesson3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit3_Lesson3.elf
+ 
+arm-none-eabi-size   Unit3_Lesson3.elf 
+arm-none-eabi-objdump -h -S  Unit3_Lesson3.elf  > "Unit3_Lesson3.list"
+arm-none-eabi-objcopy  -O binary  Unit3_Lesson3.elf  "Unit3_Lesson3.bin"
+   text	   data	    bss	    dec	    hex	filename
+    772	      8	   1568	   2348	    92c	Unit3_Lesson3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit3_Lesson3.list
+ 
+Finished building: Unit3_Lesson3.bin
+ 
+
+21:51:21 Build Finished. 0 errors, 0 warnings. (took 10s.756ms)
+
